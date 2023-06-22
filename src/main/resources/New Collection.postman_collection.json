@@ -9,26 +9,334 @@
 		{
 			"name": "post",
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"13\",\r\n    \"address\": \"13\",\r\n    \"phone\": \"1\",\r\n    \"workingHours\": 1,\r\n    \"rating\": 1.0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/v1/shop",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"v1",
+						"shop"
+					]
+				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "post",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"13\",\r\n    \"address\": \"13\",\r\n    \"phone\": \"1\",\r\n    \"workingHours\": 1,\r\n    \"rating\": 1.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/v1/shop",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"v1",
+								"shop"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 22 Jun 2023 08:49:29 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 5,\n    \"name\": \"13\",\n    \"address\": \"13\",\n    \"phone\": \"1\",\n    \"workingHours\": \"1\",\n    \"rating\": 1,\n    \"products\": null\n}"
+				}
+			]
 		},
 		{
 			"name": "put",
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"123\",\r\n    \"address\": \"123\",\r\n    \"phone\": \"123\",\r\n    \"workingHours\": 12,\r\n    \"rating\": 5.0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/v1/shop/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"v1",
+						"shop",
+						"1"
+					]
+				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "put",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"123\",\r\n    \"address\": \"123\",\r\n    \"phone\": \"123\",\r\n    \"workingHours\": 12,\r\n    \"rating\": 5.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/v1/shop/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"v1",
+								"shop",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 22 Jun 2023 08:49:38 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"name\": \"123\",\n    \"address\": \"123\",\n    \"phone\": \"123\",\n    \"workingHours\": \"12\",\n    \"rating\": 5,\n    \"products\": [\n        {\n            \"id\": 1,\n            \"name\": \"none\",\n            \"price\": 1000,\n            \"description\": \"none\",\n            \"manufacturer\": \"none\",\n            \"category\": \"none\",\n            \"shop\": 1\n        },\n        {\n            \"id\": 2,\n            \"name\": \"2NAME\",\n            \"price\": 2000,\n            \"description\": \"2\",\n            \"manufacturer\": \"2\",\n            \"category\": \"2\",\n            \"shop\": 1\n        }\n    ]\n}"
+				}
+			]
 		},
 		{
 			"name": "add product",
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"2NAME\",\r\n        \"price\": 3000.0,\r\n        \"description\": \"2i\",\r\n        \"manufacturer\": \"7\",\r\n        \"category\": \"5\"\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/v1/shop/2/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"v1",
+						"shop",
+						"2",
+						"product"
+					]
+				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "add product",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"name\": \"2NAME\",\r\n        \"price\": 3000.0,\r\n        \"description\": \"2i\",\r\n        \"manufacturer\": \"7\",\r\n        \"category\": \"5\"\r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/v1/shop/2/product",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"v1",
+								"shop",
+								"2",
+								"product"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 22 Jun 2023 08:49:42 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 2,\n    \"name\": \"13\",\n    \"address\": \"13\",\n    \"phone\": \"1\",\n    \"workingHours\": \"1\",\n    \"rating\": 1,\n    \"products\": [\n        {\n            \"id\": 3,\n            \"name\": \"2NAME\",\n            \"price\": 3000,\n            \"description\": \"2i\",\n            \"manufacturer\": \"7\",\n            \"category\": \"5\",\n            \"shop\": 2\n        },\n        {\n            \"id\": 4,\n            \"name\": \"2NAME\",\n            \"price\": 3000,\n            \"description\": \"2i\",\n            \"manufacturer\": \"7\",\n            \"category\": \"5\",\n            \"shop\": 2\n        },\n        {\n            \"id\": 5,\n            \"name\": \"2NAME\",\n            \"price\": 3000,\n            \"description\": \"2i\",\n            \"manufacturer\": \"7\",\n            \"category\": \"5\",\n            \"shop\": 2\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/v1/shop/1/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"v1",
+						"shop",
+						"1",
+						"products"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/v1/shop/1/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"v1",
+								"shop",
+								"1",
+								"products"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 22 Jun 2023 08:50:02 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"none\",\n        \"price\": 1000,\n        \"description\": \"none\",\n        \"manufacturer\": \"none\",\n        \"category\": \"none\",\n        \"shop\": {\n            \"id\": 1,\n            \"name\": \"123\",\n            \"address\": \"123\",\n            \"phone\": \"123\",\n            \"workingHours\": \"12\",\n            \"rating\": 5,\n            \"products\": [\n                1,\n                {\n                    \"id\": 2,\n                    \"name\": \"2NAME\",\n                    \"price\": 2000,\n                    \"description\": \"2\",\n                    \"manufacturer\": \"2\",\n                    \"category\": \"2\",\n                    \"shop\": 1\n                }\n            ]\n        }\n    },\n    2\n]"
+				}
+			]
 		}
 	]
 }
